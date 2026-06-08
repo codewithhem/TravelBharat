@@ -1,4 +1,4 @@
-# 🇮🇳 TravelBharat
+# TravelBharat
 
 TravelBharat is a Full Stack Tourism Website that helps users explore different Indian states, famous tourist destinations, local foods, culture, and travel information. The project is built using React.js, Node.js, Express.js, and MongoDB Atlas.
 
