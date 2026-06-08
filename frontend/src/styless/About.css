@@ -1,0 +1,52 @@
+.about-page{
+  padding:120px 8% 70px;
+  background:#0f172a;
+  color:white;
+  min-height:100vh;
+}
+
+.about-hero{
+  text-align:center;
+  max-width:900px;
+  margin:0 auto 50px;
+}
+
+.about-hero h1{
+  color:orange;
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.about-hero p{
+  color:#ddd;
+  font-size:18px;
+  line-height:1.8;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.about-card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 6px 20px rgba(0,0,0,.3);
+  transition:.3s;
+}
+
+.about-card:hover{
+  transform:translateY(-8px);
+}
+
+.about-card h2{
+  color:orange;
+  margin-bottom:15px;
+}
+
+.about-card p{
+  color:#ddd;
+  line-height:1.7;
+}

@@ -1,0 +1,57 @@
+.admin-page{
+  padding:120px 8% 70px;
+  background:#0f172a;
+  color:white;
+  min-height:100vh;
+}
+
+.admin-header{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.admin-header h1{
+  color:orange;
+  font-size:48px;
+  margin-bottom:12px;
+}
+
+.admin-header p{
+  color:#ddd;
+}
+
+.admin-stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-bottom:50px;
+}
+
+.admin-card,
+.admin-info{
+  background:#1e293b;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 6px 20px rgba(0,0,0,.3);
+}
+
+.admin-card{
+  text-align:center;
+}
+
+.admin-card h2{
+  color:orange;
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.admin-card p,
+.admin-info p{
+  color:#ddd;
+  margin-bottom:10px;
+}
+
+.admin-info h2{
+  color:orange;
+  margin-bottom:20px;
+}
