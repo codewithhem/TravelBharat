@@ -13,6 +13,7 @@ function StateCard({ state }) {
 
       <h2>{state.name}</h2>
       <p>{state.category}</p>
+      
 
       <Link to={`/state/${state._id}`}>
         <button>Explore</button>
