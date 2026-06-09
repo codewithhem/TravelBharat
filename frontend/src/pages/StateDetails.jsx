@@ -10,12 +10,12 @@ function StateDetails() {
   const [relatedStates, setRelatedStates] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/states/${id}`)
+    fetch(`https://travelbharat-backend-k7q7.onrender.com/api/states/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setState(data);
 
-        fetch("http://localhost:5000/api/states")
+        fetch("https://travelbharat-backend-k7q7.onrender.com/api/states")
           .then((res) => res.json())
           .then((allStates) => {
             const related = allStates

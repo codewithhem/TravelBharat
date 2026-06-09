@@ -11,7 +11,7 @@ function States() {
   const [category, setCategory] = useState("All");
   
   useEffect(() => {
-  fetch("http://localhost:5000/api/states")
+  fetch("https://travelbharat-backend-k7q7.onrender.com/api/states")
     .then((res) => res.json())
     .then((data) => {
       setStatesData(data);

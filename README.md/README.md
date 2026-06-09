@@ -64,6 +64,19 @@ The project uses a modern MERN Stack architecture where React handles the fronte
 - VS Code
 
 ---
+## Live Project
+
+Frontend (Netlify):
+https://mytravelbharat.netlify.app/
+
+Backend (Render):
+https://travelbharat-backend-k7q7.onrender.com/
+
+## Deployment
+
+Frontend deployed on Netlify.
+Backend deployed on Render.
+Database hosted on MongoDB Atlas.
 
 ## 📂 Project Structure
 
