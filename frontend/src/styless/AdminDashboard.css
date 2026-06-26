@@ -1,57 +1,196 @@
-.admin-page{
-  padding:120px 8% 70px;
-  background:#0f172a;
-  color:white;
-  min-height:100vh;
+.admin-page {
+  padding: 120px 8% 70px;
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
 }
 
-.admin-header{
-  text-align:center;
-  margin-bottom:40px;
+.admin-header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.admin-header h1{
-  color:orange;
-  font-size:48px;
-  margin-bottom:12px;
+.admin-header h1 {
+  color: orange;
+  font-size: 48px;
+  margin-bottom: 12px;
 }
 
-.admin-header p{
-  color:#ddd;
+.admin-header p {
+  color: #ddd;
 }
 
-.admin-stats{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:25px;
-  margin-bottom:50px;
+/* Demo Admin Banner */
+.admin-demo-banner {
+  background: linear-gradient(135deg, #ff0000, #ffb300);
+  color: #1a1a1a;
+  padding: 22px;
+  border-radius: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.admin-demo-banner h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.admin-demo-banner p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Future Updates Section */
+.future-section {
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding: 30px;
+  background: #1d2940;
+  border: 1px solid #31435f;
+  border-radius: 20px;
+}
+
+.future-section h2 {
+  text-align: center;
+  color: #df9e08;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.future-subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.future-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+
+.future-card {
+  background: #24344d;
+  border: 1px solid #3b4d68;
+  border-radius: 16px;
+  padding: 22px;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.future-card:hover {
+  transform: translateY(-6px);
+  border-color: #ffb300;
+  box-shadow: 0 10px 20px rgba(0,0,0,.25);
+}
+
+.future-card h3 {
+  color: #ffb300;
+  margin-bottom: 12px;
+  font-size: 21px;
+}
+
+.future-card p {
+  color: #d1d5db;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Admin Stats */
+.admin-stats {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
 }
 
 .admin-card,
-.admin-info{
-  background:#1e293b;
-  padding:30px;
-  border-radius:18px;
-  box-shadow:0 6px 20px rgba(0,0,0,.3);
+.admin-info {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.3);
 }
 
-.admin-card{
-  text-align:center;
+.admin-card {
+  text-align: center;
 }
 
-.admin-card h2{
-  color:orange;
-  font-size:42px;
-  margin-bottom:10px;
+.admin-card h2 {
+  color: orange;
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 
 .admin-card p,
-.admin-info p{
-  color:#ddd;
-  margin-bottom:10px;
+.admin-info p {
+  color: #ddd;
+  margin-bottom: 10px;
 }
 
-.admin-info h2{
-  color:orange;
-  margin-bottom:20px;
+.admin-info h2 {
+  color: orange;
+  margin-bottom: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .admin-page {
+    padding: 90px 5% 50px;
+  }
+
+  .admin-header h1 {
+    font-size: 34px;
+  }
+
+  .admin-demo-banner {
+    padding: 18px;
+    margin-bottom: 35px;
+  }
+
+  .admin-demo-banner h2 {
+    font-size: 24px;
+  }
+
+  .admin-demo-banner p {
+    font-size: 14px;
+  }
+
+  .future-section {
+    padding: 20px;
+    margin-bottom: 45px;
+  }
+
+  .future-section h2 {
+    font-size: 28px;
+  }
+
+  .future-subtitle {
+    font-size: 14px;
+  }
+
+  .future-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .future-card {
+    padding: 18px;
+  }
+
+  .future-card h3 {
+    font-size: 19px;
+  }
+
+  .future-card p {
+    font-size: 14px;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
 }
