@@ -4,11 +4,11 @@ function About() {
   return (
     <div className="about-page">
       <section className="about-hero">
-        <h1>About TravelBharat</h1>
+        <h1 className="about-title">About TravelBharat</h1>
         <p>
           TravelBharat is a centralized tourism information platform that helps
           users explore India state-wise and city-wise with details about places,
-          food, culture, heritage and best time to visit.
+         food, culture, heritage and best time to visit.
         </p>
       </section>
 

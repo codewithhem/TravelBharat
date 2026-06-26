@@ -50,3 +50,25 @@
   color:#ddd;
   line-height:1.7;
 }
+.about-title {
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .about-page {
+    padding: 30px 20px;
+  }
+
+  .about-page p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
