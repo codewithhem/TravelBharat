@@ -81,7 +81,7 @@ function Home() {
 
         <div className="featured-grid">
           {featuredStates.map((state) => (
-            <div className="featured-card" key={state._id}>
+            <div className="featured-card" key={state.id}>
               <img src={state.image} alt={state.name} />
               <h3>{state.name}</h3>
 

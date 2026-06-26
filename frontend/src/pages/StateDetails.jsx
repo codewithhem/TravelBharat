@@ -10,24 +10,21 @@ function StateDetails() {
   const [relatedStates, setRelatedStates] = useState([]);
 
   useEffect(() => {
-    fetch(`https://travelbharat-backend-k7q7.onrender.com/api/states/${id}`)
+    fetch("https://travelbharat-backend-k7q7.onrender.com/api/states")
       .then((res) => res.json())
-      .then((data) => {
-        setState(data);
+      .then((allStates) => {
+        const selectedState = allStates.find((item) => item._id === id);
+        setState(selectedState);
 
-        fetch("https://travelbharat-backend-k7q7.onrender.com/api/states")
-          .then((res) => res.json())
-          .then((allStates) => {
-            const related = allStates
-              .filter(
-                (item) =>
-                  item.category === data.category &&
-                  item._id !== data._id
-              )
-              .slice(0, 3);
+        const related = allStates
+          .filter(
+            (item) =>
+              item.category === selectedState?.category &&
+              item._id !== selectedState?._id
+          )
+          .slice(0, 3);
 
-            setRelatedStates(related);
-          });
+        setRelatedStates(related);
       })
       .catch((err) => console.log(err));
   }, [id]);
